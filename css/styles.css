@@ -4,13 +4,37 @@ body {
   color: #434455;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .section-title {
   font-weight: 500;
   font-size: 20px;
@@ -19,14 +43,36 @@ ul {
   color: #2e2f42;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*******************HEADER*************************************/
-/*
+
 .header {
-add change*****
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .header-nav {
+  display: flex;
+
+  align-items: center;
 }
-*/
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -36,6 +82,12 @@ add change*****
   text-transform: uppercase;
   color: #4d5ae5;
 }
+
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .logo-accent {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -45,6 +97,7 @@ add change*****
   text-transform: uppercase;
   color: #2e2f42;
 }
+
 .header-menu-list {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -53,6 +106,9 @@ add change*****
   letter-spacing: 0.02em;
   color: #2e2f42;
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .header-menu-list:hover,
 .header-menu-list:focus {
@@ -71,6 +127,8 @@ add change*****
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
+  padding: 24px 0;
+  display: block;
 }
 
 .header-menu-link:hover,
@@ -80,11 +138,15 @@ add change*****
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 
-/*
 .address-list {
+  align-items: center;
+  display: flex;
+  gap: 40px;
 }
+/*
 .address-item {
 }
 */
@@ -96,6 +158,8 @@ add change*****
   color: #434455;
   text-decoration: none;
   cursor: pointer;
+  display: block;
+  padding: 24px 0;
 }
 
 .address-link:hover,
@@ -105,6 +169,7 @@ add change*****
 /***************************HERO/section #1*********************/
 .hero {
   background-color: #2e2f42;
+  padding: 188px 188px 188px 188px;
 }
 .hero-title {
   font-size: 56px;
@@ -112,6 +177,9 @@ add change*****
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
+  min-width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .hero-button {
   font-family: "Roboto", sans-serif;
@@ -122,6 +190,13 @@ add change*****
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  width: 105px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: none;
+  min-width: 169;
+  min-height: 56;
 }
 
 .hero-button:hover {
@@ -132,21 +207,29 @@ add change*****
 }
 
 /****************************FEATURE/section #2--*******************************/
-/*
 
 .feature {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-*/
 
 .feature-list {
+  display: flex;
+  gap: 24px;
 }
+
 .feature-item {
+  width: calc((100% - 72px) / 4);
 }
+
 p.feature-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+.section-title {
+  margin-bottom: 8px;
 }
 
 /*******************************TEAM/section #3*******************************/
@@ -160,6 +243,10 @@ p.feature-text {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-left: 635px;
+  padding-bottom: 72px;
+  padding-right: 635px;
 }
 
 .team-list {
@@ -172,14 +259,20 @@ p.feature-text {
 /*
 .team-member-photo {
 }
-.team-member-name {
-}
+
 */
 .team-member-role {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.description-card {
+  padding-top: 32px;
+  padding-left: 68px;
+  padding-bottom: 32px;
+  padding-right: 32px;
 }
 
 /************************* PORTFOLIO/section #4*****************/
@@ -206,6 +299,12 @@ p.feature-text {
 .portfolio-image {
 }
 */
+.portfolio-title-image {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+  padding-right: 226px;
+}
 
 .portfolio-category {
   font-size: 16px;
@@ -213,9 +312,14 @@ p.feature-text {
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 /**************************FOOTER******************************/
 .footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-left: 156px;
+  padding-bottom: 100px;
+  padding-right: 1020px;
 }
 .footer-logo {
   font-weight: 700;
@@ -239,4 +343,6 @@ p.feature-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
+  margin-top: 16px;
 }
