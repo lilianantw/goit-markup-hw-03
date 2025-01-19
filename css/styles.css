@@ -240,7 +240,7 @@ p.feature-text {
 .team {
   background-color: #f4f4fd;
   padding-bottom: 120px;
-  padding-top: 120px;
+  padding-top: 120px 0;
 }
 .team-title {
   font-size: 36px;
