@@ -238,12 +238,12 @@ p.feature-text {
 
 /*******************************TEAM/section #3*******************************/
 .containet-team{
-  padding: 120px 0;
+  padding-bottom: 120px;
 }
 .team {
   background-color: #f4f4fd;
   padding-bottom: 120px;
-  padding-top: 120px 0;
+  padding-top: 120px;
 }
 .team-title {
   font-size: 36px;
