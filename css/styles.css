@@ -238,7 +238,7 @@ p.feature-text {
 
 /*******************************TEAM/section #3*******************************/
 .containet-team{
-  padding-top: 120px;
+  padding: 120px 0;
 }
 .team {
   background-color: #f4f4fd;
