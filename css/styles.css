@@ -237,9 +237,7 @@ p.feature-text {
 }
 
 /*******************************TEAM/section #3*******************************/
-.containet-team{
-  padding-bottom: 120px;
-}
+
 .team {
   background-color: #f4f4fd;
   padding-bottom: 120px;
@@ -260,6 +258,7 @@ p.feature-text {
   display: flex;
   gap: 24px;
   /*width: calc((100% - 72px) / 4);*/
+   margin-bottom: 0;
 }
 
 .team-member {
