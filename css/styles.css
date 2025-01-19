@@ -237,6 +237,9 @@ p.feature-text {
 }
 
 /*******************************TEAM/section #3*******************************/
+.containet-team{
+  padding-top: 120px;
+}
 .team {
   background-color: #f4f4fd;
   padding-bottom: 120px;
@@ -248,10 +251,8 @@ p.feature-text {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  color: #2e2f42;
-  padding-top: 120px;
-  min-width: 162px;
   margin-bottom: 72px;
+  
 }
 
 .team-list {
